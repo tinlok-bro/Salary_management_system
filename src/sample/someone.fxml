@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Someone">
+   <children>
+      <TabPane layoutY="1.0" prefHeight="467.0" prefWidth="760.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="欢迎">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="760.0">
+                     <children>
+                        <ImageView fx:id="IM" fitHeight="453.0" fitWidth="760.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ima.jpg" />
+                           </image></ImageView>
+                        <Text fx:id="welcome" layoutX="267.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎你" textAlignment="RIGHT" wrappingWidth="469.30029296875">
+                           <font>
+                              <Font name="Microsoft YaHei Bold" size="39.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="NOWTIME" fill="WHITE" layoutX="465.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME" textAlignment="RIGHT" wrappingWidth="240.99365234375">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="工资统计">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="hello" layoutX="83.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx你好，你本月工资情况还未发布" wrappingWidth="594.0">
+                           <font>
+                              <Font name="Microsoft YaHei" size="32.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="变动记录">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="qitagonzi" prefHeight="429.0" prefWidth="760.0">
+                           <columns>
+                              <TableColumn fx:id="ID2" prefWidth="75.0" text="记录编号" />
+                              <TableColumn fx:id="YEAR_MONTH2" prefWidth="95.0" text="年月" />
+                              <TableColumn fx:id="PERSON2" prefWidth="62.0" text="员工号" />
+                              <TableColumn fx:id="TYPE2" prefWidth="84.0" text="类型" />
+                              <TableColumn fx:id="NAME2" prefWidth="81.0" text="名称" />
+                              <TableColumn fx:id="MONEY2" prefWidth="116.0" text="金额" />
+                              <TableColumn fx:id="DESCRIPTION2" prefWidth="246.0" text="具体描述" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

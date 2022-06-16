@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="305.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.wait">
+   <children>
+      <Text layoutX="89.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎！罐头的学生信息管理系统" textAlignment="CENTER" wrappingWidth="308.30029296875">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="131.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="现在让我们尝试连接你的数据库。" />
+      <HBox layoutX="76.0" layoutY="99.0" prefHeight="35.0" prefWidth="308.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="数据库地址：" />
+            <TextField fx:id="urll" promptText="127.0.0.1:1433" text="127.0.0.1:1433" />
+         </children>
+      </HBox>
+      <HBox layoutX="89.0" layoutY="134.0" prefHeight="35.0" prefWidth="308.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="数据库名：" />
+            <TextField fx:id="name" promptText="school" text="school" />
+         </children>
+      </HBox>
+      <HBox layoutX="121.0" layoutY="169.0" prefHeight="35.0" prefWidth="263.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="账号：" />
+            <TextField fx:id="username" promptText="sa" text="sa" />
+         </children>
+      </HBox>
+      <HBox layoutX="121.0" layoutY="204.0" prefHeight="30.0" prefWidth="263.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="密码：" />
+            <TextField fx:id="password" promptText="123123" text="123123" />
+         </children>
+      </HBox>
+      <HBox layoutX="40.0" layoutY="251.0" prefHeight="35.0" prefWidth="420.0">
+         <children>
+            <Label fx:id="Now" prefHeight="30.0" prefWidth="318.0" text="状态：">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="Con" mnemonicParsing="false" onAction="#Connection" text="连接数据库" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

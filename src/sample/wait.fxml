@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="305.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.wait">
+   <children>
+      <AnchorPane fx:id="wait1" layoutY="1.0" prefHeight="305.0" prefWidth="487.0">
+         <children>
+            <Text layoutX="78.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎！罐头的工资管理系统" textAlignment="CENTER" wrappingWidth="308.30029296875">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="120.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="现在让我们尝试连接你的数据库。" />
+            <HBox layoutX="78.0" layoutY="100.0" prefHeight="35.0" prefWidth="297.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="数据库地址：">
+                     <font>
+                        <Font name="Microsoft YaHei" size="15.0" />
+                     </font></Text>
+                  <TextField fx:id="urll" promptText="127.0.0.1:1433" text="127.0.0.1:1433" />
+               </children>
+            </HBox>
+            <HBox layoutX="123.0" layoutY="170.0" prefHeight="35.0" prefWidth="250.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="账号：">
+                     <font>
+                        <Font name="Microsoft YaHei" size="15.0" />
+                     </font></Text>
+                  <TextField fx:id="username" promptText="sa" text="sa" />
+               </children>
+            </HBox>
+            <HBox layoutX="123.0" layoutY="205.0" prefHeight="30.0" prefWidth="263.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="密码：">
+                     <font>
+                        <Font name="Microsoft YaHei" size="15.0" />
+                     </font></Text>
+                  <TextField fx:id="password" promptText="123123" text="123123" />
+               </children>
+            </HBox>
+            <HBox layoutX="34.0" layoutY="237.0" prefHeight="35.0" prefWidth="420.0">
+               <children>
+                  <Label fx:id="Now" prefHeight="30.0" prefWidth="318.0" text="状态：">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Con" mnemonicParsing="false" onAction="#Connect" text="连接数据库" />
+               </children>
+            </HBox>
+            <HBox layoutX="92.0" layoutY="135.0" prefHeight="35.0" prefWidth="280.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="数据库名：">
+                     <font>
+                        <Font name="Microsoft YaHei" size="15.0" />
+                     </font></Text>
+                  <TextField fx:id="name" promptText="DB" text="Salary_management_system" />
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="Login" disable="true" prefHeight="305.0" prefWidth="487.0" visible="false">
+         <children>
+            <Text layoutX="207.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="登录">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Button fx:id="longin" layoutX="199.0" layoutY="209.0" mnemonicParsing="false" onAction="#go" prefHeight="44.0" prefWidth="71.0" text="登录" />
+            <HBox layoutX="86.0" layoutY="96.0" prefHeight="44.0" prefWidth="297.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="员工号：">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="username1" promptText="员工号" />
+               </children>
+            </HBox>
+            <HBox layoutX="86.0" layoutY="140.0" prefHeight="44.0" prefWidth="297.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="   密码：">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="password1" promptText="密码" />
+               </children>
+            </HBox>
+            <Label fx:id="Now1" layoutX="93.0" layoutY="184.0" prefHeight="20.0" prefWidth="289.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

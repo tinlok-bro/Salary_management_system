@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="663.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.table">
+   <children>
+      <TabPane prefHeight="623.0" prefWidth="955.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="月工资计算">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="-1.0" prefHeight="430.0" prefWidth="955.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                              <Tab text="考勤表">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="kaoqin" layoutY="-2.0" prefHeight="396.0" prefWidth="955.0">
+                                            <columns>
+                                              <TableColumn fx:id="ID" prefWidth="75.0" text="编号" />
+                                              <TableColumn fx:id="YEAR_MONTH" prefWidth="75.0" text="统计月份" />
+                                                <TableColumn fx:id="PERSON" prefWidth="75.0" text="员工号" />
+                                                <TableColumn fx:id="nameone" prefWidth="75.0" text="名字" />
+                                                <TableColumn fx:id="WORK_HOUR" prefWidth="101.0" text="累计工作时长" />
+                                                <TableColumn fx:id="OVER_HOUR" prefWidth="103.0" text="累计加班时长" />
+                                                <TableColumn fx:id="LEAVE_HDAY" prefWidth="110.0" text="累计请假时间" />
+                                                <TableColumn fx:id="ERRAND_HDAY" prefWidth="75.0" text="出差时间" />
+                                                <TableColumn fx:id="LATE_TIMES" prefWidth="75.0" text="迟到次数" />
+                                                <TableColumn fx:id="EARLY_TIMES" prefWidth="75.0" text="早退次数" />
+                                                <TableColumn fx:id="ABSENT_TIMES" prefWidth="75.0" text="旷工次数" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                            <Tab text="其他工资变动">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="qitagonzi" layoutY="-1.0" prefHeight="393.0" prefWidth="955.0">
+                                            <columns>
+                                              <TableColumn fx:id="ID2" prefWidth="75.0" text="记录编号" />
+                                              <TableColumn fx:id="YEAR_MONTH2" prefWidth="95.0" text="年月" />
+                                                <TableColumn fx:id="PERSON2" prefWidth="94.0" text="员工号" />
+                                                <TableColumn fx:id="TYPE2" prefWidth="52.0" text="类型" />
+                                                <TableColumn fx:id="NAME2" prefWidth="81.0" text="名称" />
+                                                <TableColumn fx:id="MONEY2" prefWidth="116.0" text="金额" />
+                                                <TableColumn fx:id="DESCRIPTION2" prefWidth="368.0" text="具体描述" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="工资统计">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="jieguo" layoutY="-2.0" prefHeight="395.0" prefWidth="955.0">
+                                            <columns>
+                                              <TableColumn fx:id="ID3" prefWidth="75.0" text="记录编号" />
+                                                <TableColumn fx:id="YEARMONTH3" prefWidth="75.0" text="年月" />
+                                              <TableColumn fx:id="PERSON3" prefWidth="75.0" text="员工号" />
+                                                <TableColumn fx:id="BASIC3" prefWidth="75.0" text="基本工资" />
+                                                <TableColumn fx:id="BASIC_TOTAL3" prefWidth="75.0" text="实际应发" />
+                                                <TableColumn fx:id="BONUS3" prefWidth="75.0" text="奖金" />
+                                                <TableColumn fx:id="ADD_TOTAIL3" prefWidth="75.0" text="其他应发" />
+                                                <TableColumn fx:id="SUB_TOTAL3" prefWidth="75.0" text="扣发" />
+                                                <TableColumn fx:id="TOTAL3" prefWidth="75.0" text="总计" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="员工信息表">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="PERSON4" layoutY="-1.0" prefHeight="393.0" prefWidth="955.0">
+                                             <columns>
+                                                <TableColumn fx:id="ID4" prefWidth="75.0" text="员工号" />
+                                                <TableColumn fx:id="AUTHORITY" prefWidth="57.0" text="权限" />
+                                                <TableColumn fx:id="NAME4" prefWidth="58.0" text="名字" />
+                                                <TableColumn fx:id="SEX4" prefWidth="62.0" text="性别" />
+                                                <TableColumn fx:id="BIRTHDAY4" prefWidth="73.0" text="生日" />
+                                                <TableColumn fx:id="DEPARTMENT4" prefWidth="90.0" text="部门" />
+                                                <TableColumn fx:id="JOB4" prefWidth="108.0" text="职位" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Text layoutX="28.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="月工资计算公式设置">
+                           <font>
+                              <Font name="Microsoft Himalaya" size="20.0" />
+                           </font>
+                        </Text>
+                        <HBox layoutX="53.0" layoutY="475.0" prefHeight="36.0" prefWidth="837.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="（">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="workuptime" prefHeight="30.0" prefWidth="96.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="* 累计加班时长 -">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="noworktime" prefHeight="30.0" prefWidth="96.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="* 累计请假时长+累计工作时长）* 基本工资 -">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="latetime" prefHeight="30.0" prefWidth="96.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="* 迟到早退次数 -">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="notime" prefHeight="30.0" prefWidth="96.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="* 旷工次数">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button layoutX="876.0" layoutY="511.0" mnemonicParsing="false" onAction="#USE" text="应用" />
+                        <Button layoutX="51.0" layoutY="541.0" mnemonicParsing="false" onAction="#inout" text="导出工资报表" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="工资设置查询">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="132.0" layoutY="64.0" prefHeight="31.0" prefWidth="266.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="员工号：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font></Text>
+                              <TextField fx:id="gonzinumber" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="117.0" layoutY="105.0" prefHeight="31.0" prefWidth="285.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="基本工资：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font></Text>
+                              <TextField fx:id="gonzi" />
+                           </children>
+                        </HBox>
+                        <Text layoutX="45.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="员工基本工资更改">
+                           <font>
+                              <Font name="Microsoft Uighur" size="20.0" />
+                           </font></Text>
+                        <Button layoutX="515.0" layoutY="104.0" mnemonicParsing="false" onAction="#xiugaiok" text="应用">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Button>
+                        <Button layoutX="818.0" layoutY="449.0" mnemonicParsing="false" onAction="#ok" text="应用">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Button>
+                        <Text layoutX="53.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="员工奖惩设置">
+                           <font>
+                              <Font name="Microsoft Tai Le" size="20.0" />
+                           </font></Text>
+                        <HBox layoutX="103.0" layoutY="411.0" prefHeight="38.0" prefWidth="305.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="奖惩数额：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font></Text>
+                              <TextField fx:id="bouns" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="126.0" layoutY="356.0" prefHeight="39.0" prefWidth="282.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="员工号：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font></Text>
+                              <TextField fx:id="bounsnumber" prefHeight="30.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="103.0" layoutY="465.0" prefHeight="37.0" prefWidth="305.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="奖惩类型：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font></Text>
+                              <ComboBox fx:id="type" prefHeight="30.0" prefWidth="202.0" promptText="选择" />
+                           </children>
+                        </HBox>
+                        <Button layoutX="435.0" layoutY="104.0" mnemonicParsing="false" onAction="#getbasic" text="获取">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <HBox layoutX="443.0" layoutY="356.0" prefHeight="37.0" prefWidth="267.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="姓名：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="namefie" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="443.0" layoutY="411.0" prefHeight="137.0" prefWidth="267.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="理由：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font>
+                              </Text>
+                              <TextArea fx:id="liyou" prefHeight="57.0" prefWidth="203.0" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="146.0" layoutY="517.0" prefHeight="39.0" prefWidth="262.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="年月：">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="20.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="BOUNSYM" prefHeight="30.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutX="818.0" layoutY="394.0" mnemonicParsing="false" onAction="#GETB" text="获取">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Text layoutX="146.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="注意：基本工资是时薪">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="其它">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="448.0" layoutY="273.0" mnemonicParsing="false" text="Exit">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="NOW" layoutX="3.0" layoutY="631.0" prefHeight="28.0" prefWidth="947.0">
+         <font>
+            <Font name="Microsoft Uighur" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
